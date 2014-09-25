@@ -121,11 +121,14 @@ class Helper(PropertyManagerHelpers, NodeAdapterBase):
                 prop_value = tuple(elements) or ()
             elif prop_map.get('type') == 'boolean':
                 prop_value = self._convertToBoolean(self._getNodeText(child))
-            elif isinstance(child.text, unicode):
-                prop_value = child.text.encode(self._encoding)
-            else:
+            elif isinstance(child.text, (str, unicode)):
+                text = child.text.strip()
+                if isinstance(text, unicode):
+                    text = text.encode(self._encoding)
                 # if we pass a *string* to _updateProperty, all other values
                 # are converted to the right type
+                prop_value = text
+            else:
                 prop_value = child.text
 
             if not self._convertToBoolean(child.attrib.get('purge') or 'True'):

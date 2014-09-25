@@ -4,6 +4,9 @@ Changelog
 0.6 (unreleased)
 ----------------
 
+- Strip whitespace from property values.
+  [enfold-josh]
+
 - Clean unicode data in local roles and workflow history
   [tom_gross]
 

@@ -1,2 +1,3 @@
 recursive-include quintagroup *
+recursive-include docs *
 recursive-exclude quintagroup *.py[co]

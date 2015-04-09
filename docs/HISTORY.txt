@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.6 (unreleased)
-----------------
+0.5+enfold1 (2015-04-09)
+------------------------
 
 - Strip whitespace from property values.
   [enfold-josh]

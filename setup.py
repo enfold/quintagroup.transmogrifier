@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.5+enfold2'
+version = '0.5+enfold3.dev0'
 
 setup(name='quintagroup.transmogrifier',
       version=version,

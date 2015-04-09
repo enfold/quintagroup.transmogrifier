@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5+enfold2 (unreleased)
+0.5+enfold2 (2015-04-09)
 ------------------------
 
 - Fix packaging
